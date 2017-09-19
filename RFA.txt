@@ -1,0 +1,97 @@
+The Yellow project have to implement the features described in the following list :
+/!\ Some are mandatory, some other might be optional, depending of the project progression.
+
+## Mandatory
+- Packets dump (alex)
+- Packets modification (jonathan)
+- Packet forging (jonathan)
+- Packet filtering (yaz)
+- pcap Import/Export (maxence)
+- (.DEB) Debian 7 64/32 (maxence)
+
+## Level 1
+- reverse DNS
+- GeoIP (yaz, done)
+- Global sniffing (Promiscuous mode)
+- (.RPM) RHEL/CentOS/Fedora 22 64/32 (droped ?)
+- Arch linux User Repository (droped ?)
+
+## Level 2
+- Packet blocking
+- Network replay
+- Traffic replication
+
+## Optional Level
+- TCP stream following
+- Scripting
+
+The mandatory category describes all the features required by the subject.
+This is oriented to receive and send packets with the pcap compliance.
+
+- Packets dump
+  The software will be able to dump all the intercepted packets.
+
+- Packets modification
+  The user will be able to modify packets and use them after.
+  This feature allows to send modified packet instead of regular packet. Both of them will be sent.
+
+- Packet forging
+  The user will be able to create his own packets, and to send and recieve them.
+
+- Packet filtering
+  This feature allows the user to filter packets by source and destination IP, by Protocol
+  or by source and destination port.
+
+- pcap Import/Export
+  The software will be able to read and generate pcap dump.
+
+- (.DEB) Debian 7 64/32
+  The software will be delivered as a proper debian package (32 and 64 bits).
+
+The Level 1 condenses some features about the packets origin
+
+- reverse DNS
+  This feature allows to resolve the domain name from the IP address.
+
+- GeoIP
+  This feature gives information on the geolocalisation of the IP.
+  It will give the source country of the packets.
+
+- Global sniffing
+  The software will be able to get every packets on the network even the one
+  which are not destinated to this specific host. It will be possible to launch
+  the software as root to enable the promiscuous mode. This mode will allow the
+  software to capture packets that are not intended for the host IP address.
+
+- (.RPM) RHEL/CentOS/Fedora 22 64/32
+  The software will be delivered as a proper rmp package (32 and 64 bits).  
+
+- Archlinux User Repository
+  The software will be delivered on the AUR repository (32 and 64 bits).  
+
+The Level 2 is more focused on features regarding the network traffic.
+
+- Packet blocking
+  This feature is related to the Packet modification and the Global sniffing.
+  It allows to block the network directly on the device and
+  choose what to send and recieve.
+
+- Network replay
+  The network replay allows to get some data from the network and
+  send it again via a loop.
+
+- Traffic replication
+  The traffic replication is another way to build a gateway.
+  It allow to get a traffic and send exactly the same to another host.
+
+The Last Level is ambitious and could be delivered depending on the project progression.
+- Scripting
+  This feature allow to script some packet modification.
+  The script will be executed on each packet.
+  /!\ The scripting is made for paranoid users.
+
+- TCP stream following
+  TCP stream uses a specific exchange of SYN, SYN/ACK, ACK and also
+  the sequence number. If we have time we would like to implement a feature
+  that allows to follow a complete TCP stream from end to end.
+  It simplifies the network debugging for system or network administrators.
