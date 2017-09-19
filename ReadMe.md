@@ -45,9 +45,6 @@ The dumping is very bad.
 The Makefile didn't put objects file in the right folder.
 (For now, they stay in the src folder)
 
-The file `grep_net.c` contains the content of this internet website :
-http://www.binarytides.com/packet-sniffer-code-in-c-using-linux-sockets-bsd-part-2/
-
 # Note :
 
 To build with geoloc enabled (geoloc.c and -lGeoIP) :
